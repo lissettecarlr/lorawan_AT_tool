@@ -1,2 +1,2 @@
-# lorawan_AT_tool
-A simple testing tool
+# lorawan的AT模组测试工具
+python的串口通信工具
