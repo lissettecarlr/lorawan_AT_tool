@@ -7,139 +7,140 @@
     <x>0</x>
     <y>0</y>
     <width>480</width>
-    <height>308</height>
+    <height>252</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTextBrowser" name="textBrowser">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>50</y>
-      <width>341</width>
-      <height>231</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
+      <x>10</x>
       <y>10</y>
-      <width>341</width>
-      <height>31</height>
+      <width>461</width>
+      <height>211</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
      <item>
-      <widget class="QPushButton" name="ser_bt_find">
-       <property name="text">
-        <string>串口搜索</string>
-       </property>
-      </widget>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="ser_bt_find">
+         <property name="text">
+          <string>串口搜索</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="ser_comboBox"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="ser_bt_open">
+         <property name="text">
+          <string>打开</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="ser_bt_close">
+         <property name="text">
+          <string>关闭</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="at_bt_config">
+         <property name="text">
+          <string>填写配置</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>修改按键</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </item>
      <item>
-      <widget class="QComboBox" name="ser_comboBox"/>
-     </item>
-     <item>
-      <widget class="QPushButton" name="ser_bt_open">
-       <property name="text">
-        <string>打开</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="ser_bt_close">
-       <property name="text">
-        <string>关闭</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>10</y>
-      <width>101</width>
-      <height>271</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <widget class="QPushButton" name="at_bt_config">
-       <property name="text">
-        <string>填写配置</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="at_bt_join">
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="text">
-        <string>请求入网</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="at_bt_id">
-       <property name="text">
-        <string>获取信息</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="at_bt_send">
-       <property name="text">
-        <string>测试发包</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="at_bt_statue">
-       <property name="text">
-        <string>获取状态</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="at_bt_set_cfg">
-       <property name="text">
-        <string>修改配置</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="at_bt_save">
-       <property name="text">
-        <string>保存配置</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="at_bt_clear">
-       <property name="text">
-        <string>清空配置</string>
-       </property>
-      </widget>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QTextBrowser" name="textBrowser">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QPushButton" name="at_bt_join">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>请求入网</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="at_bt_id">
+           <property name="text">
+            <string>获取信息</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="at_bt_send">
+           <property name="text">
+            <string>测试发包</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="at_bt_statue">
+           <property name="text">
+            <string>获取状态</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="at_bt_set_cfg">
+           <property name="text">
+            <string>修改配置</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="at_bt_save">
+           <property name="text">
+            <string>保存配置</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="at_bt_clear">
+           <property name="text">
+            <string>清空配置</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
      </item>
     </layout>
    </widget>
