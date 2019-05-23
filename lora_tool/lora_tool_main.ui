@@ -218,6 +218,26 @@
       <string>470900000</string>
      </property>
     </item>
+    <item>
+     <property name="text">
+      <string>471100000</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>471300000</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>471500000</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>471700000</string>
+     </property>
+    </item>
    </widget>
    <widget class="QLineEdit" name="lab_senddata">
     <property name="geometry">
